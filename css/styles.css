@@ -10843,3 +10843,8 @@ section {
   font-weight: bold; 
   display: inline;
 }
+
+.responsive {
+  width: 100%; /* Set width to 100% of its container */
+  height: auto; /* Maintain aspect ratio */
+}
