@@ -6,6 +6,6 @@ erieoutdoorpursuits
 
 git add --all
 
-git commit -m "images"
+git commit -m "facebook image"
 
 git push -u origin main
