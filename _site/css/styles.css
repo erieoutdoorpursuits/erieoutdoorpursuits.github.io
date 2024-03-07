@@ -10849,3 +10849,12 @@ section {
   width: 100%;
   height: auto;
 }
+
+
+.logo {
+  max-width: 75%;
+  max-height: 75%;
+  display: inline-block;
+    padding: 20px; /* Add some spacing around the image */
+}
+
