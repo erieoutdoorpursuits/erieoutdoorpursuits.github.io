@@ -10846,5 +10846,6 @@ section {
 }
 
 .responsive {
-  width: 100%; /* Set width to 100% of its container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
+}
