@@ -6,6 +6,6 @@ erieoutdoorpursuits
 
 git add --all
 
-git commit -m "Update Ashtabula Bike Club"
+git commit -m "Update organizations"
 
 git push -u origin main
