@@ -6,6 +6,6 @@ erieoutdoorpursuits
 
 git add --all
 
-git commit -m "Update metatags"
+git commit -m "Update bicycle routes"
 
 git push -u origin main
