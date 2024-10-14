@@ -8,6 +8,6 @@ password
 
 git add --all
 
-git commit -m "Update bicycle routes"
+git commit -m "Update Erie Outing Club"
 
 git push -u origin main
