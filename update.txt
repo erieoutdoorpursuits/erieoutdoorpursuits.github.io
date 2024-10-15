@@ -8,6 +8,6 @@ password
 
 git add --all
 
-git commit -m "Update Erie Outing Club"
+git commit -m "Update update section"
 
 git push -u origin main
