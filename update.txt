@@ -10,6 +10,6 @@ Devoper settng- token
 
 git add --all
 
-git commit -m "test token"
+git commit -m "Update Erie Outing Club"
 
 git push -u origin main
