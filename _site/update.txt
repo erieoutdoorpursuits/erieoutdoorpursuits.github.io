@@ -3,9 +3,13 @@
 
 erieoutdoorpursuits
 
+password
+
+Devoper settng- token
+
 
 git add --all
 
-git commit -m "Update bicycle routes"
+git commit -m "Update-2 erie outing club page"
 
 git push -u origin main
