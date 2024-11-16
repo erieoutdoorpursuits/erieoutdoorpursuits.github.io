@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Erie Outing Club</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Erie Outing Club" />
+<meta property="og:type" content="Social Outdoor Club" />
+<meta property="og:url" content="https://www.erieoutdoorpursuits.info/eoc/" />
+<meta property="og:image" content="https://i.imgur.com/XphzYa5.jpg" />
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+/* Container for flexboxes */
+/* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Create three unequal columns that sits next to each other */
+.column {
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Left and right column */
+.column.side {
+   -webkit-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
+}
+
+/* Middle column */
+.column.middle {
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+}
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.calendar  {
+  position: relative;
+  padding-bottom: 75%; /* Aspect ratio */
+  height: 0;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px; 
+}
+
+.calendar iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+a {
+  color: black;
+  font-size: 2em;
+}
+
+.responsiveCal {
+    position: relative;
+    padding-bottom: 75%; /* Adjust this value to change the aspect ratio */
+    height: 0;
+    overflow: hidden;
+}
+.responsiveCal iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .responsiveCal {
+        padding-bottom: 100%; /* Adjust this value as needed */
+    }
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-url {
+    word-wrap: break-word; /* For older browsers */
+    overflow-wrap: break-word; /* For modern browsers */
+    word-break: break-all; /* Breaks the word at any character to prevent overflow */
+}
+
+.footer {
+ background-color:#BDB76B;
+ color:black;
+ font-size: 1.875em; /* 30px/16=1.875em */
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="header" style="background-color: blue">
+  <h2>Erie Outing Club</h2>
+</div>
+
+<div class="row">
+  <div class="column side" style="background-color: tan; color: black"><h2>Erie Outing Club Membership Application
+    <a href="https://www.erieoutdoorpursuits.info/eoc_membership_app/eoc-membership-app.pdf" target="_blank">Join the Erie Outing Club</a>
+    </h2>
+    <img src="https://i.imgur.com/oyWVbSQl.jpg" alt="erie outing club" width="500" height="500" class="responsive-img">
+  </div>
+  <div class="column middle calendar responsiveCal">Calendar
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FNew_York&bgcolor=%23ffffff&mode=AGENDA&src=OTE5NGE1MzQyMzYxZmJmNjY4ZWQyZjhlZGZhY2U1YmNjMjQ4OGFkNjYzNGVmYTg4Mzg1MzFhYjNhNzk0ZDU5MUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+ 
+
+  </div>
+  <div class="column side" style="background-color: white; color: black"><h2>Erie Outing Club Offical Website</h2>
+    <a href="https://erieoutingclub.org/wp/" target="_blank" class="responsive-url ">https://erieoutingclub.org/wp/</a>
+    <br>
+    <br>
+    <img src="https://i.imgur.com/XphzYa5l.jpg" alt="erie outing club  logo" width="500" height="500" class="responsive-img">
+
+  </div>
+</div>
+<div class="footer">
+  <p>A social, non-competitive Outdoors Club for adults, who participate in all kinds of outdoor activities. They schedule outdoor activities throughout the year, generally in the Erie PA area and surrounding counties, including western NY and northeast Ohio. We mostly go camping, hiking, backpacking, cycling, and kayaking; in the wintertime, we cross-country ski and snowshoe but are open to doing other activities as well.
+       They enjoy socializing and will sometimes get something to eat after an event.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
