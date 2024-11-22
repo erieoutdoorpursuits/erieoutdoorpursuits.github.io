@@ -1,121 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Erie County Bicycle Routes">
-  <meta property="og:title" content="Bicycle Routes">
-  <meta property="og:type" content="article">
-  <meta property="og:image" content="https://i.imgur.com/P2fbddDm.jpg">
-  <meta property="og:url" content="URL_to_your_page">
-  <meta property="og:description" content="Your Open Graph description here">
-  <!-- Add other meta tags as needed -->
-  <title>Bicycle Routes</title>
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the side navigation */
-.sidenav {
-  height: 100%;
-  width: 200px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-}
-
-
-/* Side navigation links */
-.sidenav a {
-  color: white;
-  padding: 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color on hover */
-.sidenav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the content */
-.content {
-  margin-left: 200px;
-  padding-left: 20px;
-}
-
-h1 {
-text-align: center;
- font-size: 3em;
-}
-
-p {
-text-align: center;
- font-size: 2em;
-} 
-
-h2 {
-  text-align: left;
- font-size: 2em;
-
-}
-
-.left {
-  text-align: left;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erie Outdoors Pursuits Bicycle Routes</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .sidebar {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+            padding: 48px 0 0;
+            box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+            display: none;
+        }
+        .sidebar-sticky {
+            position: relative;
+            top: 0;
+            height: calc(100vh - 48px);
+            padding-top: .5rem;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        .sidebar a.nav-link {
+            color: white;
+        }
+        .sidebar a.nav-link:hover {
+            color: #007bff;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ddd;
+        }
+        .navbar-toggler {
+            border-color: white;
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                display: block;
+            }
+            .main-content {
+                margin-left: 220px;
+            }
+        }
+    </style>
 </head>
 <body>
 
-<div class="sidenav">
- 
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top d-md-none">
+    <a class="navbar-brand" style="color: white" href="#">Erie Outdoors Pursuits</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#ernst_trail" onclick="closeSidebar()">Ernst Trail</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#hearthland-pet-cementery-and-flag-park-ride" onclick="closeSidebar()">Hearthland Pet Cementery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#pleasant-ridge-to-white-turkey" onclick="closeSidebar()">Pleasant Ridge</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#bicentional-park-to-lake-city" onclick="closeSidebar()">Bicentional Park</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#lake-erie-park" onclick="closeSidebar()">Lake Erie Park</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="d-flex">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-dark sidebar">
+        <div class="sidebar-sticky pt-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#ernst_trail" onclick="closeSidebar()">
+                        Ernst Trail
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hearthland-pet-cementery-and-flag-park-ride" onclick="closeSidebar()">
+                        Hearthland Pet Cementery
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pleasant-ridge-to-white-turkey" onclick="closeSidebar()">
+                        Pleasant Ridge
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bicentional-park-to-lake-city" onclick="closeSidebar()">
+                        Bicentional Park
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#lake-erie-park" onclick="closeSidebar()">
+                        Lake Erie Park
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 main-content">
+        <div class="pt-3 pb-2 mb-3 border-bottom">
+            <h1>Erie Outdoors Pursuits Bicycle Routes</h1>
+            <p>on ride by GPS</p>
+        </div>
+
+        <section id="ernst_trail">
+            <h2>Ernst Trail to Conneaut Lake</h2>
+            <a href="https://ridewithgps.com/routes/44719860" target="_blank">
+                <img src="https://i.imgur.com/1bZIhRzh.jpg" alt="Ernst Trail to Conneaut Lake" class="img-fluid">
+                <p class="mt-2"><a href="https://ridewithgps.com/routes/44719860" target="_blank">Ernst Trail to Conneaut Lake on ride by gps</a></p>
+            </a>
+        </section>
+
+        <section id="hearthland-pet-cementery-and-flag-park-ride">
+            <h2>Hearthland Pet Cementery and Flag Park Ride</h2>
+            <a href="https://ridewithgps.com/routes/47510066" target="_blank">
+                <img src="https://i.imgur.com/z0jejfPh.jpg" alt="Hearthland Pet Cementery and Flag Park Ride" class="img-fluid">
+                <p class="mt-2"><a href="https://ridewithgps.com/routes/47510066" target="_blank">Hearthland Pet Cementery and Flag Park Ride on ride by gps</a></p>
+            </a>
+        </section>
+
+        <section id="pleasant-ridge-to-white-turkey">
+            <h2>Pleasant Ridge To White Turkey</h2>
+            <a href="https://ridewithgps.com/routes/42850555" target="_blank">
+                <img src="https://i.imgur.com/Dhd02qVh.jpg" alt="Pleasant Ridge to White Turkey" class="img-fluid">
+                <p class="mt-2"><a href="https://ridewithgps.com/routes/42850555" target="_blank">Pleasant Ridge to White Turkey ride on ride by gps</a></p>
+            </a>
+        </section>
+
+        <section id="bicentional-park-to-lake-city">
+            <h2>Bicentional Park to Lake City</h2>
+            <a href="https://ridewithgps.com/routes/47510585" target="_blank">
+                <img src="https://i.imgur.com/XDV5tCgh.jpg" alt="Bicentional Park to Lake City" class="img-fluid">
+                <p class="mt-2"><a href="https://ridewithgps.com/routes/47510585" target="_blank">Bicentional Park to Lake City on ride by gps</a></p>
+            </a>
+        </section>
+
+        <section id="lake-erie-park">
+            <h2>Lake Erie Park West to Beaver Center</h2>
+            <a href="https://ridewithgps.com/routes/41282528" target="_blank">
+                <img src="https://i.imgur.com/89mOxAkh.jpg" alt="Lake Erie Park West to Beaver Center" class="img-fluid">
+                <p class="mt-2"><a href="https://ridewithgps.com/routes/41282528" target="_blank">Lake Erie Park West to Beaver Center on ride by gps</a></p>
+            </a>
+        </section>
+    </main>
 </div>
 
-<div class="content">
-  <h1>Erie Outdoors Pursuits Bicycle Routes</h1>
-  <p> on ride by GPS</p>
-  <h2>Ernst Trail to Conneaut Lake 
-  </h2>
-  <a href="https://ridewithgps.com/routes/44719860" target="_blank"><img src="https://i.imgur.com/1bZIhRzh.jpg" alt="erstTrailToConneautLake">
-    <br>
-    <p class="left"><a href="https://ridewithgps.com/routes/44719860" target="_blank"">Ernst Trail to Conneaut Lake on ride by gps</a></p>
-</a>
-<h2>Hearthland Pet Cementery and Flag Park Ride 
-</h2>
-<a href="https://ridewithgps.com/routes/47510066" target="_blank"><img src="https://i.imgur.com/z0jejfPh.jpg" alt="erstTrailToConneautLake">
-  <br>
-  <p class="left"><a href="https://ridewithgps.com/routes/44719860" target="_blank"">Hearthland Pet Cementery and Flag Park Ride</a></p>
-</a>
-<h2>Pleasant Ridge To White Turkey 
-</h2>
-<a href="https://ridewithgps.com/routes/42850555" target="_blank"><img src="https://i.imgur.com/Dhd02qVh.jpg" alt="Pleasant Ridge to White Turkey">
-  <br>
-  <p class="left"><a href="https://ridewithgps.com/routes/42850555" target="_blank"">Pleasant Ridge to White Turkey</a></p>
-</a>
-<h2>Bicentional Park to Lake City  
-</h2>
-<a href="https://ridewithgps.com/routes/47510585" target="_blank"><img src="https://i.imgur.com/XDV5tCgh.jpg" alt="Pleasant Ridge to White Turkey">
-  <br>
-  <p class="left"><a href="https://ridewithgps.com/routes/47510585" target="_blank"">Bicentional Park to Lake City</a></p>
-</a>
-<h2>Lake Erie Park West to Beaver Center  
-</h2>
-<a href="https://ridewithgps.com/routes/41282528" target="_blank"><img src="https://i.imgur.com/89mOxAkh.jpg" alt="Pleasant Ridge to White Turkey">
-  <br>
-  <p class="left"><a href="https://ridewithgps.com/routes/41282528" target="_blank"">Lake Erie Park West to Beaver Center </a></p>
-</a>
-
-</div>
-
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function closeSidebar() {
+        if (window.innerWidth <= 767.98) {
+            document.getElementById('navbarNav').classList.remove('show');
+        }
+    }
+</script>
 </body>
 </html>
