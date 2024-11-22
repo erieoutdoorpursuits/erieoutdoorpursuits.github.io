@@ -10,6 +10,6 @@ Devoper settng- token
 
 git add --all
 
-git commit -m "Update links"
+git commit -m "Update link"
 
 git push -u origin main
