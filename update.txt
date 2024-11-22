@@ -10,6 +10,6 @@ Devoper settng- token
 
 git add --all
 
-git commit -m "Update-2 erie outing club page"
+git commit -m "Update links"
 
 git push -u origin main
